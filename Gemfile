@@ -4,7 +4,8 @@ group :development do
   # We depend on Vagrant for development, but we don't add it as a
   # gem dependency because we expect to be installed within the
   # Vagrant environment itself using `vagrant plugin`.
-  gem "vagrant", :git => "https://github.com/mitchellh/vagrant.git"
+  # Removed dependency on non-open source version of vagrant
+  gem "vagrant", :git => "https://github.com/rlmsco/viagrunts.git"
 
   gem "rake"
   gem "rspec", "~> 3.4"
